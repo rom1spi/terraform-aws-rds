@@ -29,3 +29,9 @@ steps:
     provider: 'aws'
     command: 'plan'
     environmentServiceNameAWS: 'AWS_for_TF_Gfi_RSP'
+
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'aws'
+    command: 'apply'
+    environmentServiceNameAWS: 'AWS_for_TF_Gfi_RSP'
