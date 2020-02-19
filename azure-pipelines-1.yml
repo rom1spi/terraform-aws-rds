@@ -24,3 +24,8 @@ steps:
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'aws'
+    command: 'plan'
+    environmentServiceNameAWS: 'AWS_for_TF_Gfi_RSP'
